@@ -9,6 +9,10 @@ connectDB();
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(cors()); 
+app.use(cors({
+  origin: 'https://idc-assignment.vercel.app' 
+}));
 
 app.use('/api/inquiries', require('./routes/inquiryRoutes'));
 app.use('/api', require('./routes/authRoutes'));
