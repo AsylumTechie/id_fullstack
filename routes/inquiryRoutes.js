@@ -23,7 +23,16 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.delete('/:id', protect, async (req, res) => {
+// router.delete('/:id', protect, async (req, res) => {
+//     try {
+//         await Inquiry.findByIdAndDelete(req.params.id);
+//         res.json({ message: 'Inquiry deleted' });
+//     } catch (error) {
+//         res.status(500).json({ error: 'Server Error' });
+//     }
+// });
+
+router.delete('/:id',  async (req, res) => {
     try {
         await Inquiry.findByIdAndDelete(req.params.id);
         res.json({ message: 'Inquiry deleted' });
