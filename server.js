@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use(cors()); 
 app.use(cors({
-  origin: 'https://idc-cosminnox-bjwl.vercel.app' 
+  origin: 'https://cosminnox.vercel.app' 
 
 }));
 
