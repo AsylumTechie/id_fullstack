@@ -11,8 +11,8 @@ app.use(cors());
 app.use(express.json());
 app.use(cors()); 
 app.use(cors({
-//   origin: 'https://idc-assignment.vercel.app' 
-origin: '*'
+  origin: 'https://idc-cosminnox-bjwl.vercel.app' 
+
 }));
 
 app.use('/api/inquiries', require('./routes/inquiryRoutes'));
